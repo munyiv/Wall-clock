@@ -3,12 +3,10 @@
 
 }
 body{
-    background-color:burlywood;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden; 
+    background-color:skyblue;
+   
+    
+    
 }
 /* over flow hidden is to hid the scroll bar */
 .time{
@@ -18,7 +16,13 @@ body{
     background-color: white;
     border-radius: 50%;
     border: 2px solid yellow;
-  
+    justify-content: center; 
+    align-items: center;
+    min-height: 20vh; 
+    overflow: hidden; 
+    display: flex;
+    margin-left: 40%;
+    margin-top: 40px;
 }
 .time .number{
     --rotation:0;
@@ -58,19 +62,19 @@ body{
 .time .hand.second{
     width: 2px;
     height: 46%;
-    background-color: indianred;
+    background-color:greenyellow;
 }
 
 .time .hand.minute{
     width: 10px;
     height: 35%;
-    background-color: black;
+    background-color: blue;
 }
 
 .time .hand.hour{
-    width: 15px;
-    height: 30%;
-    background-color:green;
+    width: 12px;
+    height: 25%;
+    background-color:black;
 }
 .time::after{
     content: '';
@@ -83,4 +87,16 @@ body{
     left: 50%;
     transform: translate(-50% ,-50%);
     border-radius: 50%;
+}
+.heading{
+   text-align: center;
+   font-style: italic;
+   color: black;
+}
+.bottom{
+    float: right;
+    font-style: italic;
+    font-size: 30px;
+    margin-right:5% ;
+
 }
